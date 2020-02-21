@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#177245"
+    android:orientation="vertical"
+    tools:context=".ModificaPassword">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- LOGO -->
+            <ImageView
+                android:id="@+id/logo_login"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/img_log"
+                android:transitionName="logo_login" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <!-- MODIFICA PASSWORD -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Modifica Password"
+                android:textColor="#000"
+                android:textSize="45sp"
+                android:fontFamily="sans-serif-black">
+            </TextView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- USERNAME -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="Username:"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-medium">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/usernameUt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black">
+                </TextView>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- PASSWORD -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="Password:"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-medium">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/passwordUt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="63dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black">
+                </TextView>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <!-- NUOVA PASSWORD -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Nuova Password:"
+                android:textSize="20sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/nuovaPassword"
+                android:inputType="textPassword"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+            </EditText>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <!-- CONFERMA PASSWORD -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="Conferma Password:"
+                android:textSize="20sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/confermaPassword"
+                android:inputType="textPassword"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+            </EditText>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <!-- BOTTONE AGGIORNA PASSWORD -->
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonAggPassword"
+                android:text="Aggiorna Password"
+                android:layout_marginLeft="105dp">
+            </Button>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <!-- BOTTONE HOME -->
+            <Button
+                android:layout_width="193dp"
+                android:layout_height="35dp"
+                android:id="@+id/buttonHomee"
+                android:text="Home"
+                android:background="#808080"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="108dp">
+            </Button>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

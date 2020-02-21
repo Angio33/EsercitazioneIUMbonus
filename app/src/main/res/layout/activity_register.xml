@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#177245"
+    android:orientation="vertical"
+    tools:context=".Registrazione">
+
+    <!-- REGISTRAZIONE -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="16dp"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:text="Registrazione"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-black"/>
+
+    <!-- BORDO REG -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:background="#000000" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <!-- USERNAME -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Username"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputUsername"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <!-- PASSWORD -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Password"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputPassword"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:inputType="textPassword"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <!-- CONFERMA PASSWORD -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Conferma password"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputConfPassword"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:inputType="textPassword"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <!-- CITTA' DI PROVENIENZA -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Città di provenienza"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inputCittaProvenienza"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <!-- DATA DI NASCITA -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Data di nascita"
+                android:textSize="20sp"
+                android:id="@+id/dataNascita"/>
+
+            <EditText
+                android:id="@+id/inputDataNascita"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <!-- BOTTONE REGISTRATI -->
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:id="@+id/buttonRegistrati"
+                android:text="Registrati"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:transitionName="button_trans"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6B8E23"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/logo_login"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_log"
+        android:transitionName="logo_login" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <!-- LOGIN -->
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Login"
+        android:textColor="#000"
+        android:textSize="45sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <!-- USERNAME -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:text="Username"
+        android:textSize="20sp"
+        android:fontFamily="@string/app_name"/>
+
+    <EditText
+        android:id="@+id/inputUsername"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <!-- PASSWORD -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:text="Password"
+        android:textSize="20sp"
+        android:fontFamily="@string/app_name"/>
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:inputType="textPassword"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <!-- BOTTONE ACCEDI -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="ACCEDI"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:transitionName="button_trans" />
+
+    <!-- REGISTRATI -->
+    <TextView
+        android:id="@+id/registrati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Registrati"
+        android:textAlignment="center"
+        android:textColor="#0000FF"
+        android:textSize="15dp"
+        android:transitionName="reg_trans" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+</LinearLayout>
